@@ -1,0 +1,111 @@
+*{
+  font-family: 'kenyancoffee', sans-serif;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'kenyancoffee';
+  src: url(./fonts/kenyan_coffee/Kenyan\ Coffee\ Rg.otf);
+}
+
+body{
+  background-color: #b83948;
+  margin: 0px;
+
+}
+
+h1{
+  text-align: center;
+
+}
+
+li{
+  list-style-type: none;
+}
+
+nav,aside{
+  background-color: #2B2D42;
+  min-width: 200px;
+  padding: 0px 10px;
+  position: sticky;
+  top: 0px;
+  color: #8D99AE;
+}
+
+nav{
+  margin-left: 0px;
+}
+
+aside{
+  margin-right: 0px;
+}
+
+a{
+  color: #EDF2F4;
+  padding: 0px;
+}
+
+main{
+  background-color: #8D99AE;
+  padding: 0px 20px;
+  border-inline: 8px solid #2B2D42;
+}
+
+div.contenedor{
+  display: flex;
+  flex-direction:row;
+  align-items: flex-start;
+}
+
+img.floatRight{
+  float: right;
+  margin: 2px 10px;
+  border-right: 3px solid #EDF2F4;
+  border-bottom: 3px solid #EDF2F4;
+}
+
+img.floatLeft{
+  float: left;
+  margin: 2px 10px;
+  border-left: 3px solid #EDF2F4;
+  border-bottom: 3px solid #EDF2F4;
+}
+
+header{
+  background-color: #ce2541;
+  color: #EDF2F4;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0px 0px;
+  border-top: 30px solid #2B2D42;
+}
+
+footer{
+  background-color: #ce2541;
+  color: #EDF2F4;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 0px 0px;
+
+}
+
+@media (orientation: portrait){
+  div.contenedor{
+    display: flex;
+    flex-direction: column;
+  }
+  nav,aside.containerMedia{
+    position: relative;
+    min-width: 100vw;
+    order: -1;
+    text-align: center;
+
+  }
+
+  ul{
+    padding: 0px;
+  }
+  
+
+}
+
